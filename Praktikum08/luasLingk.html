@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luas Lingkaran</title>
+  </head>
+  <body>
+    <h1>Luas Lingkaran</h1>
+    <label for="jari">Jari-jari (r)</label>
+    <input type="number" id="jari" />
+    <br /><br />
+    <span id="hasil">Hasil</span>
+    <br /><br />
+    <button type="button" onclick="hitungLuas()">Hitung</button>
+
+    <script>
+      function hitungLuas() {
+        let r = document.getElementById("jari").value;
+        let luas = 3.14 * r * r;
+        document.getElementById("hasil").innerHTML = "Luas Lingkaran " + luas;
+      }
+    </script>
+  </body>
+</html>
