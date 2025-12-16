@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin | Create New Seminar</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-light">
+    <!-- ===== NAVBAR ADMIN ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Admin Panel</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Create Seminar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== CONTENT ===== -->
+    <div class="container my-5">
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">Create New Seminar</h4>
+        </div>
+
+        <div class="card-body">
+          <form>
+            <!-- KODE -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Kode</label>
+              <div class="col-md-8">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Kode"
+                    required
+                  />
+                  <span class="input-group-text">
+                    <i class="fa fa-barcode"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- NAMA KEGIATAN -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Nama Kegiatan</label>
+              <div class="col-md-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nama Kegiatan"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- TANGGAL MULAI -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Tanggal Mulai</label>
+              <div class="col-md-8">
+                <div class="input-group">
+                  <input type="date" class="form-control" required />
+                  <span class="input-group-text">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TANGGAL AKHIR -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Tanggal Akhir</label>
+              <div class="col-md-8">
+                <div class="input-group">
+                  <input type="date" class="form-control" />
+                  <span class="input-group-text">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- BIAYA -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Biaya</label>
+              <div class="col-md-8">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Biaya"
+                  />
+                  <span class="input-group-text">
+                    <i class="fa fa-money"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TEMPAT -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Tempat</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" placeholder="Tempat" />
+              </div>
+            </div>
+
+            <!-- LATITUDE -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Latitude</label>
+              <div class="col-md-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Latitude"
+                />
+              </div>
+            </div>
+
+            <!-- LONGITUDE -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Longitude</label>
+              <div class="col-md-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Longitude"
+                />
+              </div>
+            </div>
+
+            <!-- JENIS KEGIATAN -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">Jenis Kegiatan</label>
+              <div class="col-md-8">
+                <select class="form-select" required>
+                  <option value="">-- Pilih --</option>
+                  <option>Talkshow</option>
+                  <option>Lomba</option>
+                  <option>Seminar</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- PIC -->
+            <div class="row mb-3">
+              <label class="col-md-4 col-form-label">PIC</label>
+              <div class="col-md-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Person in Charge"
+                />
+              </div>
+            </div>
+
+            <!-- DESKRIPSI -->
+            <div class="row mb-4">
+              <label class="col-md-4 col-form-label">Deskripsi</label>
+              <div class="col-md-8">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Deskripsi kegiatan"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="row">
+              <div class="offset-md-4 col-md-8">
+                <button type="submit" class="btn btn-success">
+                  <i class="fa fa-save"></i> Simpan Seminar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+      © 2025 Admin Seminar
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
